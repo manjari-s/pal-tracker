@@ -14,7 +14,7 @@ jobs:
             apt-get -y install mysql-server
             service mysql start
             sleep 5
-​
+
       - run:
           name: Install flyway
           command: |
