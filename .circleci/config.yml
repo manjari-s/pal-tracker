@@ -12,7 +12,9 @@ jobs:
           command: |
             apt-get update
             apt-get -y install mysql-server
-            service mysql start​
+            service mysql start
+​
+            # Wait for MySQL to start
             sleep 5
 ​
       - run:
@@ -144,4 +146,3 @@ workflows:
       - deployToProd:
           requires:
             - canDeployToProduction
-Col
