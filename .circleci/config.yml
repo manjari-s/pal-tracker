@@ -13,7 +13,6 @@ jobs:
             apt-get update
             apt-get -y install mysql-server
             service mysql start
-​            # Wait for MySQL to start
             sleep 5
 ​
       - run:
